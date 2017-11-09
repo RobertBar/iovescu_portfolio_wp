@@ -1,0 +1,355 @@
+/******************
+ * General
+ ******************/
+#categories nav ul li a,
+#main-navigation nav ul li a,
+h1,h2,h3, h4, h5, p, label {
+    font-family: "Lato";
+    color: rgb(142, 135, 135);
+    -moz-transform: scale(1, 0.85);
+    -webkit-transform: scale(1, 0.85);
+    -ms-transform: scale(1, 0.85);
+}
+
+label {
+    font-size: 18px;
+}
+
+
+.separator {
+    height: 1px;
+    width: 85%;
+    margin: 0 auto;
+    background: #bababa;
+}
+
+ul {
+    list-style: none!important;
+}
+
+
+/******************
+ * Links and Navigation
+ ******************/
+
+a {
+    text-decoration: none!important;
+}
+
+#categories nav ul li a,
+#main-navigation nav ul li a {
+    color: #8e8787;
+    font-weight: 400;
+}
+
+#categories nav ul li button {
+    background-color: #f7f7f7;
+    color: #8e8787;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#categories nav ul li button:hover {
+    background-color: #eee; 
+}
+
+#categories nav ul li button:focus {
+    outline: 0;
+}
+
+#categories nav ul li a:hover,
+#main-navigation nav ul li a:hover {
+    color: #4a4a4a!important;
+}
+
+#categories nav ul li a:hover {
+    text-decoration: line-through!important;
+}
+
+#main-navigation nav ul {
+    text-align: center;
+}
+
+#main-navigation nav ul li {
+    padding-right: 20px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+#main-navigation nav ul li:nth-child(-n+2 ) {
+    background: url(../img/nav-separator.png) center right no-repeat;
+}
+
+/******************
+ * Spacing
+ ******************/
+ .mt-20 {
+    margin-top: 20px!important;
+}
+
+.mb-20 {
+    margin-bottom: 20px!important;
+}
+
+.pt-50 {
+    padding-top: 50px!important; 
+}
+
+.pb-50 {
+    padding-bottom: 50px!important; 
+}
+
+.pt-25 {
+    padding-top: 25px!important; 
+}
+
+.pb-25 {
+    padding-bottom: 25px!important; 
+}
+
+
+/******************
+ * Header
+ ******************/
+
+#logo {
+    max-height: 135px;
+    width: auto;
+}
+
+/******************
+ * Footer
+ ******************/
+
+footer #copyright p a {
+    color: #8e8787;
+    font-weight: 600;
+}
+
+
+/******************
+ * Album
+ ******************/
+.gallery-item {
+    margin-bottom: 30px;
+}
+
+.gallery-header {
+    /* width: 100%; */
+    /* height: 273px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-header img {
+    width: 100%;
+    height: auto;
+    transition: all 1s ease-in;
+}
+
+
+.gallery-header .image-overlay {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    z-index: 2;
+    width: 94%;
+    height: 94%;
+    opacity: 0;
+    background: rgba(255, 255, 255, .9);
+    transition: all .7s ease-in;
+    cursor: pointer;
+}
+
+.gallery-header .image-overlay:hover {
+    font-size: 24px;
+    opacity: 1;
+    transition: all .6s ease-in;
+}
+
+.gallery-header .image-overlay p {
+    color: #444;
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.gallery-footer {
+    width: 100%;
+    height: 65px;
+    background: #f9f9f9;
+}
+
+.gallery-footer .round-container {
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding-top: 16px;
+    padding-left: 7px;
+}
+
+
+/******************
+ * CTA Button
+ ******************/
+#CTA .button a,
+.gform_footer #gform_submit_button_1 {
+    background-color: #413e3e;
+    padding: 10px;
+    color: #FFF;
+    transition: all .5s ease-in;
+}
+
+#CTA .button a:hover,
+.gform_footer #gform_submit_button_1:hover {
+    background-color: #595959;
+    color: #f3f3f3;
+    transition: all .5s ease-in;
+}
+
+.gform_footer #gform_submit_button_1 {
+    border: none;
+    cursor: pointer;
+}
+
+/******************
+ * Testimonials
+ ******************/
+.carousel-inner {
+    width: 55%;
+    margin: 0 auto;
+    min-height: 150px;
+}
+
+.carousel-inner .carousel-item {
+    text-align: center;
+    font-style: italic;
+}
+
+.carousel-inner .carousel-item p strong {
+    font-style: normal;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/left.png);
+    margin-left: 90px;
+    background-repeat: no-repeat;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/right.png);
+    margin-right: 90px;
+    background-repeat: no-repeat;
+}
+
+
+/******************
+ * Social links
+ ******************/
+ #social-links .icon {
+    margin-right: 15px;
+ }
+
+ /**********************************************
+ ***********************************************
+ ***         Single Portfolio Page
+ ***********************************************
+ ***********************************************/
+#about .container-about .title {
+    text-align: center;
+}
+
+
+.grid-item {
+    width: 220px; 
+}
+@media( max-width: 760px) {
+    .grid-item {
+        width: 100%; 
+    }
+    .grid-item a img{
+        width: 100%; 
+        height: auto;
+    }
+}
+
+
+ /**********************************************
+ ***********************************************
+ ***         About me page
+ ***********************************************
+ ***********************************************/
+.about-photo img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top:30px;
+}
+
+#about-me .title {
+    margin-top: 30px;
+    padding-top: 0px;
+} 
+
+ /**********************************************
+ ***********************************************
+ ***         Contact Page
+ ***********************************************
+ ***********************************************/
+ #info p {
+     margin-bottom: 0px;
+ }
+
+#shareIcons {
+    position: relative
+}
+
+.jssocials-share {
+     font-size: 12px;
+     text-align: center;
+     background: #fff;
+     height: 30px;
+     width: 30px;
+     border-radius: 50%;
+     margin-right: 15px;
+     padding-top: 6.5px;
+ }
+ 
+ .sl-count,
+ .sl-icon{
+     float: left!important;
+ }
+ 
+.sl-button {
+    padding: 0!important;
+}
+
+span.s1-count {
+    font-size: 21px;
+    padding-top: 3px!important;
+}
+
+h4.lightbox-title {
+    font-size: 19px;
+}
+p.lightbox-description {
+    font-size: 16px;
+}
+h4.lightbox-title,
+p.lightbox-description {
+    color: #fff;
+    font: Arial;
+}
+
+.the-social-links {
+    margin-right: 10px;
+    filter: grayscale(100%);
+}
+
+#heart-full {
+    color: #da1b1b;
+}
